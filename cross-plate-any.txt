@@ -1,0 +1,13 @@
+#ifdef __cplusplus // 检查是否为 C++ 环境
+#if __cplusplus >= 201703L // 检查是否支持 C++17
+#include <any> // 使用标准库提供的 std::any
+#else
+#include "my_any.h" // 使用自己实现的 any
+#endif
+#else
+#error "This code requires a C++ compiler"
+#endif
+
+/*
+  在不同版本中使用any
+*/
